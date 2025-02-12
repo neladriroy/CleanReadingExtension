@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Clean Reading",
+  "version": "1.0.0",
+  "description": "Transform any webpage into a clean reading experience. Block ads, hide distracting elements, enable reader mode, and customize your browsing with site whitelisting.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "src/rules/rules.json"
+    }]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["src/content/content.css"],
+      "js": ["src/content/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "src/background/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": "icons/logo.png"
+  },
+  "options_page": "src/options/options.html",
+  "icons": {
+    "16": "icons/logo-small.svg",
+    "32": "icons/logo-small.svg",
+    "48": "icons/logo.svg",
+    "128": "icons/logo.png"
+  }
+}

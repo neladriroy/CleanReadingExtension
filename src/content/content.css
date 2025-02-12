@@ -1,0 +1,294 @@
+/* Hide common ad elements */
+/* Hide common ad elements */
+.clean-reading-hidden,
+[class*="ad-container"],
+[class*="ad-wrapper"],
+[class*="advertisement"],
+ins.adsbygoogle,
+iframe[src*="doubleclick.net"],
+iframe[src*="googlesyndication.com"],
+[class*="sponsored-content"],
+[class*="promoted-content"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    z-index: -9999 !important;
+}
+
+[id*="exo_slider"],
+.exo_wrapper,
+[class*="exo_wrapper"],
+[id*="video_container"],
+[src*=".aucdn.net"],
+[src*=".afcdn.net"],
+[class*="_lr"],
+[id*="_lr"],
+[class*="cta_wrapper"],
+[id*="cta_wrapper"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    z-index: -9999 !important;
+}
+
+/* Hide popups and overlays */
+[class*="popup"],
+[class*="modal"],
+[class*="overlay"] {
+    display: none !important;
+}
+
+/* Prevent scroll blocking */
+body.clean-reading-active {
+    overflow: auto !important;
+}
+
+/* Hide popups and overlays */
+.popup,
+.modal,
+.overlay,
+[class*="popup"],
+[class*="modal-overlay"],
+[id*="popup"],
+[class*="newsletter-signup"],
+[class*="cookie-banner"],
+[class*="consent-banner"] {
+    display: none !important;
+}
+
+/* Fix for modal-related body styles */
+body.modal-open,
+body.no-scroll,
+html.no-scroll {
+    overflow: auto !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove overlay backgrounds */
+div[class*="overlay"],
+div[id*="overlay"] {
+    display: none !important;
+}
+
+
+/* Hide elements */
+.clean-reading-hidden {
+  display: none !important;
+}
+
+/* Hide elements */
+.clean-reading-hidden {
+  display: none !important;
+}
+
+/* Selection mode styles */
+.clean-reading-selecting * {
+  cursor: crosshair !important;
+}
+
+.clean-reading-highlight-overlay {
+  position: fixed;
+  pointer-events: none;
+  z-index: 2147483647;
+  background: rgba(26, 115, 232, 0.15);
+  border: 2px solid #1a73e8;
+  box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+  display: none;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+
+.clean-reading-selecting * {
+  cursor: crosshair !important;
+}
+
+.clean-reading-selecting *:hover {
+  outline: 2px solid rgba(26, 115, 232, 0.5) !important;
+  outline-offset: -2px !important;
+  transition: outline 0.2s ease !important;
+}
+
+@keyframes cleanReadingFadeOut {
+  0% {
+      opacity: 1;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+}
+
+/* Show animation */
+@keyframes cleanReadingFadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.clean-reading-hiding {
+  animation: cleanReadingFadeOut 0.3s ease forwards !important;
+}
+
+.clean-reading-showing {
+  animation: cleanReadingFadeIn 0.3s ease forwards !important;
+}
+
+/* Hidden state */
+.clean-reading-hidden {
+  display: none !important;
+}
+
+/* Enhanced highlight effect */
+.clean-reading-selecting *:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 115, 232, 0.1);
+  pointer-events: none;
+  z-index: 2147483646;
+}
+
+/* Reader mode styles */
+body.reader-mode {
+  max-width: 680px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+  background: #fff !important;
+  color: #333 !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+}
+
+body.reader-mode img {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 20px 0 !important;
+}
+
+body.reader-mode h1, 
+body.reader-mode h2, 
+body.reader-mode h3, 
+body.reader-mode h4, 
+body.reader-mode h5, 
+body.reader-mode h6 {
+  margin: 1.5em 0 0.5em !important;
+  line-height: 1.3 !important;
+}
+
+/* Add these styles to your existing content.css */
+
+.clean-reading-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2147483647;
+    background: rgba(249, 249, 249, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+}
+
+.toolbar-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    height: 36px;
+}
+
+.toolbar-counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1c1c1e;
+    font-weight: 500;
+}
+
+.toolbar-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.toolbar-button {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: -0.01em;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cancel-button {
+    background: rgba(0, 0, 0, 0.05);
+    color: #1c1c1e;
+}
+
+.cancel-button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.done-button {
+    background: #0061FF;
+    color: white;
+}
+
+.done-button:hover {
+    background: #0052D9;
+}
+
+@media (prefers-color-scheme: dark) {
+    .clean-reading-toolbar {
+        background: rgba(44, 44, 46, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .toolbar-counter {
+        color: #ffffff;
+    }
+
+    .cancel-button {
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+
+    .cancel-button:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+/* ... rest of your existing styles ... */

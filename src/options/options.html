@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clean Reading Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clean Reading Settings</h1>
+        </header>
+
+        <main>
+            <section class="settings-section">
+                <h2>Whitelisted Sites</h2>
+                <p class="description">Ads will not be blocked on these sites:</p>
+                <div class="whitelist-container">
+                    <div id="whitelistItems" class="whitelist-items"></div>
+                    <div class="add-site">
+                        <input type="text" id="newSite" placeholder="Enter domain (e.g., example.com)">
+                        <button id="addSite">Add Site</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="settings-section">
+                <h2>Custom Selectors</h2>
+                <p class="description">Add custom CSS selectors to block additional elements:</p>
+                <div class="selectors-container">
+                    <div id="selectorItems" class="selector-items"></div>
+                    <div class="add-selector">
+                        <input type="text" id="newSelector" placeholder="Enter CSS selector (e.g., .ad-banner)">
+                        <button id="addSelector">Add Selector</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="status-message" id="status"></div>
+            <div class="buttons">
+                <button id="saveBtn" class="primary">Save Changes</button>
+                <button id="resetBtn">Reset to Defaults</button>
+            </div>
+        </footer>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle with Gradient -->
+    <circle cx="64" cy="64" r="60" fill="url(#gradient)" />
+    
+    <!-- Book Shape -->
+    <path d="M38 42C38 39.7909 39.7909 38 42 38H86C88.2091 38 90 39.7909 90 42V86C90 88.2091 88.2091 90 86 90H42C39.7909 90 38 88.2091 38 86V42Z" 
+          fill="white" 
+          filter="url(#shadow)" />
+    
+    <!-- Clean Lines -->
+    <path d="M48 54H78" stroke="#0061FF" stroke-width="4" stroke-linecap="round" />
+    <path d="M48 64H68" stroke="#0061FF" stroke-width="4" stroke-linecap="round" />
+    <path d="M48 74H73" stroke="#0061FF" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Filter/Clean Symbol -->
+    <path d="M82 52L77 57M77 52L82 57" 
+          stroke="#0061FF" 
+          stroke-width="3" 
+          stroke-linecap="round" />
+    
+    <!-- Definitions -->
+    <defs>
+        <!-- Gradient -->
+        <linearGradient id="gradient" x1="64" y1="4" x2="64" y2="124" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#0061FF" />
+            <stop offset="100%" stop-color="#0052D9" />
+        </linearGradient>
+        
+        <!-- Shadow -->
+        <filter id="shadow" x="-4" y="-4" width="136" height="136" filterUnits="userSpaceOnUse">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2" />
+        </filter>
+    </defs>
+</svg>
